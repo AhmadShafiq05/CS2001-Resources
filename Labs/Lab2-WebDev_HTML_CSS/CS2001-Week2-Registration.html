@@ -14,11 +14,16 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a href"#">Home</a>"=</li>
+                <li><a href"#">Register</a></li>
+                <li><a href"#">Login</a></li>
+                <li><a href"#">Help</a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <input type="text" placeholder="Search">
             </aside>
             <section>
                 <form class="center" novalidate>
@@ -33,11 +38,35 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" class="textinput"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" class="textinput"><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" class="textinput"><br><br>
+
+                    <label for="confirmPassword">Confirm Password:</label><br>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="textinput"><br><br>
+
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
+
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
+
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms">
+                        I agree to the 
+                        <a hred="#">Terms of Use</a> and 
+                        <a href="#">Privacy Policy</a>
+                    </label><br><br>
+
+                    <input type="button" id="Register" value="Register" class="button">
+                    <a href="#">Learn more</a><br><br>
+
+                    
 
                     <br><br>
                 </form>
