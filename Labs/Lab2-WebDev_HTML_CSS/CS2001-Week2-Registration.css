@@ -52,9 +52,9 @@ main {
     border-bottom: 0.5rem solid;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
-    min-height: 300px;
+    align-items: stretch;
     gap: 1rem;
     /*ToDo: Make this a flexible container; 
     You can find the following helpful: display, flex-wrap, width, min-height, height
@@ -64,18 +64,19 @@ main {
 section, aside {
     padding: 0.5rem;
     box-sizing: border-box;
-    min-height: 100%;
 }
 
 aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
     background-color: #deded8;
+    width: 20%;
 }
 
 section {
     /*ToDo: Set width. For fluid layouts, use min-width, max-width, and set to relative 
    values, like 75% of the page.*/
+   width: 80%;
 }
 
 /*Styling for search in aside*/
@@ -89,15 +90,20 @@ section {
     /*ToDo: Styling for centered elements
     You can use margin, width useful to center.
     */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
     border: 3px solid green;
-    padding: 10px;
+    padding: 20px;
   }
 
 /* Styling for text inputs in the form*/
 .textInput {
     display: block;
-    width: auto;
-    text-align: left;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing:border-box;
 }
 
 /*Styling with a media query - lecture slide 36*/
